@@ -6,10 +6,31 @@
   </head>
   <body>
     <header class="header">
-      <nav class="main-nav">Меню</nav>
-      <p class="phone">8 (812) 690-10-10</p>
-      <b class="header__description">Почувствуй расслабление в своем теле</b>
-      <h1 class="header__title">Yoga</h1>
+      <nav class="main-nav">
+        <p class="main-nav__title">Меню</p>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Направления</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Абонементы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Наша команда</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Отзывы</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="tel:88126901010" class="phone">8 (812) 690-10-10</a>
+      <img
+        src=""
+        alt="Почувствуй расслабление в своем теле"
+        class="header__promo"
+      />
+      <img src="" alt="Логотип Yoga" class="header__logo" />
+
       <a href="#" class="header__link"
         >Запишитесь на бесплатное пробное занятие</a
       >
@@ -38,9 +59,9 @@
 
     <main class="main-content">
       <section class="features">
-        <h2 class="features__title caption">Направления</h2>
-        <ul class="card">
-          <li class="card__item">
+        <h2 class="features__title heading">Направления</h2>
+        <ul>
+          <li class="card">
             <img
               src=""
               alt="Изображение Хатха-йога"
@@ -56,7 +77,7 @@
               <span class="visually-hidden">Переход в раздел Хатха-йога</span>
             </a>
           </li>
-          <li class="card__item">
+          <li class="card">
             <img
               src=""
               alt="Изображение Ашатанга-йога"
@@ -74,7 +95,7 @@
               >
             </a>
           </li>
-          <li class="card__item">
+          <li class="card">
             <img
               src=""
               alt="Изображение Хатха-йога"
@@ -87,55 +108,70 @@
             <p class="card__description">Вт, Чт – с 18:00 до 21:00</p>
             <p class="card__subtitle">Инструктор Емельянова Полина</p>
             <a href="#" class="card__link">
-              <span class="visually-hidden"
-                >Переход в раздел Кундалини-йога</span
-              >
+              <span class="visually-hidden">
+                Переход в раздел Кундалини-йога
+              </span>
             </a>
           </li>
         </ul>
-        <button class="button button__features">Смотреть больше</button>
+        <button class="button button__features" type="button">
+          Смотреть больше
+        </button>
       </section>
 
       <section class="promo">
-        <h2 class="promo__title caption">Абонементы</h2>
-        <button class="promo__button promo__button--active">1 месяц</button>
-        <button class="promo__button">6 месяцев</button>
-        <button class="promo__button">12 месяцев</button>
-        <article class="slider">
-          <ul class="slider__list">
-            <li class="slider__item">
-              <p class="slider__title">Утро</p>
-              <p class="slider__text">Посещение</p>
-              <p class="slider__text">с 11:00 до 16:00</p>
-              <p class="slider__price">1300 P</p>
+        <h2 class="promo__title heading">Абонементы</h2>
+        <button class="promo__button promo__button--active" type="button">
+          1 месяц
+        </button>
+        <button class="promo__button" type="button">6 месяцев</button>
+        <button class="promo__button" type="button">12 месяцев</button>
+        <article class="price">
+          <ul class="price__list">
+            <li class="price__item">
+              <p class="price__title">Утро</p>
+              <p class="price__text">Посещение с 11:00 до 16:00</p>
+              <p class="price__value">1300 P</p>
+              <button class="price__button" type="button">
+                Заказать абонемент
+              </button>
             </li>
-            <li class="slider__item slider__item--big">
-              <p class="slider__title">Безлимит</p>
-              <p class="slider__text">Посещение не ограничено</p>
-              <p class="slider__text">по времени</p>
-              <!-- тут ты конечно будешь ругаться -->
-              <p class="slider__price">2800 P</p>
-              <button class="slider__button">Заказать абонемент</button>
+            <li class="price__item price__item--big">
+              <p class="price__title">Безлимит</p>
+              <p class="price__text">Посещение не ограничено по времени</p>
+              <p class="price__value">2800 P</p>
+              <button class="price__button" type="button">
+                Заказать абонемент
+              </button>
             </li>
-            <li class="slider__item">
-              <p class="slider__title">Утро</p>
-              <p class="slider__text">Посещение</p>
-              <p class="slider__text">с 17:00 до 21:00</p>
-              <p class="slider__price">2000 P</p>
+            <li class="price__item">
+              <p class="price__title">Утро</p>
+              <p class="price__text">Посещение с 17:00 до 21:00</p>
+              <p class="price__value">2000 P</p>
+              <button class="price__button" type="button">
+                Заказать абонемент
+              </button>
             </li>
           </ul>
         </article>
       </section>
+
       <section class="meta">
-        <h2 class="meta__title caption">Наша команда</h2>
+        <h2 class="meta__title heading">Наша команда</h2>
         <div class="meta__inner">
-          <ul class="carousel">
-            <li class="carousel__item">
-              <img src="" alt="Портрет тренера" height="143" width="144" />
-              <div class="carousel__content">
-                <p class="carousel__title">Инструктор</p>
-                <p class="carousel__title">Серёжа Попов</p>
-                <p class="carousel__subtitle">Хатха-йога</p>
+          <ul class="meta__slider">
+            <li class="team-card">
+              <img
+                src=""
+                alt="Портрет тренера"
+                height="143"
+                width="144"
+                class="team-card__img"
+              />
+              <div class="team-card__content">
+                <p class="team-card__title">Инструктор</p>
+                <p class="team-card__title">Серёжа Попов</p>
+                <p class="team-card__subtitle">Хатха-йога</p>
                 <section class="socials">
                   <ul class="socials__list">
                     <li class="socials__item">
@@ -153,16 +189,24 @@
                       </a>
                     </li>
                   </ul>
-                  <button class="carousel__button">Смотреть</button>
+                  <button class="team-card__button" type="button">
+                    Смотреть
+                  </button>
                 </section>
               </div>
             </li>
-            <li class="carousel__item">
-              <img src="" alt="Портрет тренера" height="143" width="144" />
-              <div class="carousel__content">
-                <p class="carousel__title">Инструктор</p>
-                <p class="carousel__title">Серёжа Попов</p>
-                <p class="carousel__subtitle">Флоу-йога</p>
+            <li class="team-card">
+              <img
+                src=""
+                alt="Портрет тренера"
+                height="143"
+                width="144"
+                class="team-card__img"
+              />
+              <div class="team-card__content">
+                <p class="team-card__title">Инструктор</p>
+                <p class="team-card__title">Серёжа Попов</p>
+                <p class="team-card__subtitle">Флоу-йога</p>
                 <section class="socials">
                   <ul class="socials__list">
                     <li class="socials__item">
@@ -180,16 +224,24 @@
                       </a>
                     </li>
                   </ul>
-                  <button class="carousel__button">Смотреть</button>
+                  <button class="team-card__button" type="button">
+                    Смотреть
+                  </button>
                 </section>
               </div>
             </li>
-            <li class="carousel__item">
-              <img src="" alt="Портрет тренера" height="143" width="144" />
-              <div class="carousel__content">
-                <p class="carousel__title">Инструктор</p>
-                <p class="carousel__title">Серёжа Попов</p>
-                <p class="carousel__subtitle">Йога в гамаках</p>
+            <li class="team-card">
+              <img
+                src=""
+                alt="Портрет тренера"
+                height="143"
+                width="144"
+                class="team-card__img"
+              />
+              <div class="team-card__content">
+                <p class="team-card__title">Инструктор</p>
+                <p class="team-card__title">Серёжа Попов</p>
+                <p class="team-card__subtitle">Йога в гамаках</p>
                 <section class="socials">
                   <ul class="socials__list">
                     <li class="socials__item">
@@ -207,7 +259,9 @@
                       </a>
                     </li>
                   </ul>
-                  <button class="carousel__button">Смотреть</button>
+                  <button class="team-card__button" type="button">
+                    Смотреть
+                  </button>
                 </section>
               </div>
             </li>
@@ -233,104 +287,117 @@
           </article>
         </div>
         <div class="pagination">
-          <button class="pagination__button pagination__button--back"></button>
-          <div class="pagination__box">
-            <span class="pagination__number pagination__number--active">1</span>
-            <p class="pagination__text">/</p>
-            <span class="pagination__number">9</span>
-          </div>
+          <button
+            class="pagination__button pagination__button--prev"
+            type="button"
+          ></button>
+          <p class="pagination__number">1/9</p>
 
           <button
-            class="pagination__button pagination__button--forward"
+            class="pagination__button pagination__button--next"
+            type="button"
           ></button>
         </div>
       </section>
 
       <section class="feedback">
-        <h2 class="feedback__title caption">Отзывы</h2>
-        <button class="feedback__button feedback__button--back"></button>
-        <ul class="feedback-slider">
-          <li class="feedback-slider__item">
-            <blockquote class="feedback__description">
+        <h2 class="feedback__title heading">Отзывы</h2>
+        <button
+          class="feedback__button feedback__button--prev"
+          type="button"
+        ></button>
+        <ul class="feedback__slider">
+          <li class="feedback-card">
+            <blockquote class="feedback-card__quote">
               Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового
               дня. И после занятий наступает спокойствие! Йога это отличный
               способ быстро и качественно расслабиться. Спасибо инструктору
               Марине.
             </blockquote>
-            <img src="" alt="Аватар коментатора" height="52" width="51" />
-            <p class="feedback__title">Серёжа Попов</p>
-            <time class="feedback__time">16 мая 2018</time>
-            <section class="socials">
-              <ul class="socials__list">
-                <li class="socials__item">
-                  <a href="#" class="socials__link socials__link--vk">
-                    <span class="visually-hidden"
-                      >ссылка на сайт Вконтакте</span
-                    >
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link socials__link--twitter">
-                    <span class="visually-hidden">ссылка на сайт twitter</span>
-                  </a>
-                </li>
-              </ul>
-            </section>
+            <div class="feedback-card__inner">
+              <img src="" alt="Аватар коментатора" height="52" width="51" />
+              <p class="feedback-card__title">Серёжа Попов</p>
+              <time class="feedback-card__time">16 мая 2018</time>
+              <section class="socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--vk">
+                      <span class="visually-hidden"
+                        >ссылка на сайт Вконтакте</span
+                      >
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--twitter">
+                      <span class="visually-hidden"
+                        >ссылка на сайт twitter</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </li>
-          <li class="feedback-slider__item">
-            <blockquote class="feedback__description">
+          <li class="feedback-card">
+            <blockquote class="feedback-card__description">
               Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового
               дня. И после занятий наступает спокойствие! Йога это отличный
               способ быстро и качественно расслабиться. Спасибо инструктору
               Марине.
             </blockquote>
-            <img src="" alt="Аватар коментатора" height="52" width="51" />
-            <p class="feedback__title">Серёжа Попов</p>
-            <time class="feedback__time">16 мая 2018</time>
-            <section class="socials">
-              <ul class="socials__list">
-                <li class="socials__item">
-                  <a href="#" class="socials__link socials__link--vk">
-                    <span class="visually-hidden"
-                      >ссылка на сайт Вконтакте</span
-                    >
-                  </a>
-                </li>
-                <li class="socials__item">
-                  <a href="#" class="socials__link socials__link--twitter">
-                    <span class="visually-hidden">ссылка на сайт twitter</span>
-                  </a>
-                </li>
-              </ul>
-            </section>
+            <div class="feedback-card__inner">
+              <img src="" alt="Аватар коментатора" height="52" width="51" />
+              <p class="feedback-card__title">Серёжа Попов</p>
+              <time class="feedback-card__time">16 мая 2018</time>
+              <section class="socials">
+                <ul class="socials__list">
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--vk">
+                      <span class="visually-hidden"
+                        >ссылка на сайт Вконтакте
+                      </span>
+                    </a>
+                  </li>
+                  <li class="socials__item">
+                    <a href="#" class="socials__link socials__link--twitter">
+                      <span class="visually-hidden"
+                        >ссылка на сайт twitter</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
           </li>
         </ul>
-        <button class="feedback__button feedback__button--forward"></button>
+        <button
+          class="feedback__button feedback__button--next"
+          type="button"
+        ></button>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__inner">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <p class="footer__title">Адрес:</p>
-            <address class="footer__subtitle">Московский проспект, 22</address>
-          </li>
-          <li class="footer__item">
-            <p class="footer__title">Телефон:</p>
-            <p class="footer__title">
-              8 (812) 690-10-10
-            </p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__title">График работы:</p>
-            <p class="footer__subtitle">Пн-Вс с 11:00 до 21:00</p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__title">Email:</p>
-            <p class="footer__subtitle">yogaspb@gmail.com</p>
-          </li>
-        </ul>
+      <section class="footer__inner">
+        <div class="footer__item">
+          <p class="footer__title">Адрес:</p>
+          <address class="footer__subtitle">Московский проспект, 22</address>
+        </div>
+        <div class="footer__item">
+          <p class="footer__title">Телефон:</p>
+          <p class="footer__title">
+            8 (812) 690-10-10
+          </p>
+        </div>
+        <div class="footer__item">
+          <p class="footer__title">График работы:</p>
+          <p class="footer__subtitle">Пн-Вс с 11:00 до 21:00</p>
+        </div>
+        <div class="footer__item">
+          <p class="footer__title">Email:</p>
+          <p class="footer__subtitle">yogaspb@gmail.com</p>
+        </div>
+
         <section class="socials">
           <ul class="socials__list">
             <li class="socials__item">
@@ -350,27 +417,31 @@
             </li>
           </ul>
         </section>
-      </div>
-      <div class="footer__inner">
-        <h2 class="footer__caption caption">
+      </section>
+      <section class="footer__inner">
+        <h2 class="footer__heading heading">
           Запишитесь на бесплатное пробное занятие
         </h2>
         <section class="trial">
-          <form action="#" class="trial__form">
-            <label for="" class="trial__label">
-              <input type="text" class="trial__input" value="Ваше Имя" />
-              <input type="text" class="trial__input" value="Ваш телефон" />
-              <button type="submit" class="trial__button">
+          <form action="#" class="trial-form">
+            <label for="" class="trial-form__label">
+              <input type="text" class="trial-form__input" value="Ваше Имя" />
+              <input
+                type="text"
+                class="trial-form__input"
+                value="Ваш телефон"
+              />
+              <button type="submit" class="trial-form__button">
                 Оставить заявку
               </button>
             </label>
           </form>
         </section>
-      </div>
-      <div class="footer__copyright">
+      </section>
+      <section class="footer__copyright">
         <a href="#" class="footer__link">Yogaspb.com</a>
         <p class="footer__copy">© 2018 Все права защищены</p>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
